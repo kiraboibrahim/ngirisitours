@@ -3,22 +3,20 @@
 import Head from "next/head";
 import { motion, Variants } from "framer-motion";
 
-import Topbar from "@/components/Topbar";
-import Navbar from "@/components/Navbar";
-import Carousel from "@/components/Carousel";
-import BookingForm from "@/components/BookingForm";
-import AboutSection from "@/components/AboutSection";
-import FeatureSection from "@/components/FeatureSection";
-import DestinationSection from "@/components/DestinationSection";
-import ServicesSection from "@/components/ServicesSection";
-import PackagesSection from "@/components/PackagesSection";
-import RegistrationSection from "@/components/RegistrationSection";
-import TeamSection from "@/components/TeamSection";
-import TestimonialSection from "@/components/TestimonialSection";
-import BlogSection from "@/components/BlogSection";
-import Footer from "@/components/Footer";
-import Gallery from "@/components/Gallery";
-import BackToTopFAB from "@/components/BackToTop";
+import Carousel from "@/components/home/Carousel";
+import BookingForm from "@/components/home/BookingForm";
+import AboutSection from "@/components/home/AboutSection";
+import FeatureSection from "@/components/home/FeatureSection";
+import DestinationSection from "@/components/home/DestinationSection";
+import ServicesSection from "@/components/home/ServicesSection";
+import PackagesSection from "@/components/home/PackagesSection";
+import SpecialOffer from "@/components/home/SpecialOffer";
+import TeamSection from "@/components/home/TeamSection";
+import TestimonialSection from "@/components/home/TestimonialSection";
+import BlogSection from "@/components/home/BlogSection";
+import Footer from "@/components/common/Footer";
+import Gallery from "@/components/home/Gallery";
+import BackToTopFAB from "@/components/home/BackToTop";
 
 const fadeUp: Variants = {
     hidden: { opacity: 0, y: 20 },
@@ -43,7 +41,7 @@ export default function Home() {
         <DestinationSection key="destination" />,
         <ServicesSection key="services" />,
         <PackagesSection key="packages" />,
-        <RegistrationSection key="registration" />,
+        <SpecialOffer key="registration" />,
         <TeamSection key="team" />,
         <TestimonialSection key="testimonial" />,
         <BlogSection key="blog" />,
@@ -55,9 +53,6 @@ export default function Home() {
             <Head>
                 <title>Traveler | Explore the World</title>
             </Head>
-
-            <Topbar />
-            <Navbar />
 
             {sections.map((Section, i) => (
                 <motion.div

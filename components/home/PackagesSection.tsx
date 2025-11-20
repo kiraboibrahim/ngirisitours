@@ -41,7 +41,7 @@ const packages: Package[] = [
         ratingCount: 60,
         image: "/img/package-4.jpg",
     },
-    {
+    /**{
         id: 4,
         title: "Relaxing Getaway at Ssese Islands",
         location: "Ssese Islands",
@@ -51,7 +51,7 @@ const packages: Package[] = [
         rating: 4.6,
         ratingCount: 45,
         image: "/img/package-4.jpg",
-    },
+    }**/
     {
         id: 5,
         title: "Mountains & Waterfalls Hike in Rwenzori Mountains",
@@ -78,41 +78,52 @@ const packages: Package[] = [
 
 const PackagesSection = () => {
     return (
-        <div className="container-fluid py-5" id="packages">
-            <div className="container pt-5 pb-3 text-center">
-                <h6 className="text-primary text-uppercase" style={{ letterSpacing: 5 }}>Packages</h6>
-                <h1>Perfect Tour Packages</h1>
-                <div className="row">
+        <div className="w-full py-5" id="packages">
+            <div className="max-w-[1140px] mx-auto px-[15px] pt-5 pb-3 text-center">
+                <h6
+                    className="text-[#7AB730] uppercase mb-2 text-base font-medium leading-[1.2]"
+                    style={{ letterSpacing: 5 }}
+                >
+                    Packages
+                </h6>
+                <h1 className="mb-2 text-[2.5rem] max-[1200px]:text-[calc(1.375rem_+_1.5vw)] font-medium leading-[1.2] text-[#212121]">
+                    Perfect Tour Packages
+                </h1>
+                <div className="flex flex-wrap -mx-[15px]">
                     {packages.map((pkg) => (
-                        <div key={pkg.id} className="col-lg-4 col-md-6 mb-4">
-                            <div className="package-item bg-white mb-2">
+                        <div key={pkg.id} className="lg:w-1/3 md:w-1/2 w-full px-[15px] mb-4">
+                            <div className="bg-white mb-2 transition-[box-shadow_0.5s] shadow-[0_0_30px_#CCCCCC]">
                                 <img
-                                    className="img-fluid"
+                                    className="max-w-full h-auto"
                                     src={pkg.image}
                                     alt={pkg.title}
                                 />
                                 <div className="p-4">
-                                    <div className="d-flex justify-content-between mb-3">
-                                        <small>
-                                            <FontAwesomeIcon icon={faMapMarkerAlt} className="text-primary me-2" />
+                                    <div className="flex justify-between mb-3">
+                                        <small className="text-[80%] font-normal">
+                                            <FontAwesomeIcon icon={faMapMarkerAlt} className="text-[#7AB730] mr-2" />
                                             {pkg.location}
                                         </small>
-                                        <small>
-                                            <FontAwesomeIcon icon={faCalendarAlt} className="text-primary me-2" />
+                                        <small className="text-[80%] font-normal">
+                                            <FontAwesomeIcon icon={faCalendarAlt} className="text-[#7AB730] mr-2" />
                                             {pkg.duration}
                                         </small>
-                                        <small>
-                                            <FontAwesomeIcon icon={faUser} className="text-primary me-2" />
+                                        <small className="text-[80%] font-normal">
+                                            <FontAwesomeIcon icon={faUser} className="text-[#7AB730] mr-2" />
                                             {pkg.people}
                                         </small>
                                     </div>
-                                    <a className="h5 text-decoration-none" href="#">{pkg.title}</a>
-                                    <div className="border-top mt-4 pt-4 d-flex justify-content-between">
-                                        <h6 className="m-0">
-                                            <FontAwesomeIcon icon={faStar} className="text-primary me-2" />
-                                            {pkg.rating} <small>({pkg.ratingCount})</small>
+                                    <a className="text-[1.25rem] font-medium leading-[1.2] text-[#212121] no-underline hover:text-[#7AB730]" href="#">
+                                        {pkg.title}
+                                    </a>
+                                    <div className="border-t border-[rgba(0,0,0,0.1)] mt-4 pt-4 flex justify-between">
+                                        <h6 className="m-0 text-base font-medium leading-[1.2] text-[#212121]">
+                                            <FontAwesomeIcon icon={faStar} className="text-[#7AB730] mr-2" />
+                                            {pkg.rating} <small className="text-[80%] font-normal">({pkg.ratingCount})</small>
                                         </h6>
-                                        <h5 className="m-0">${pkg.price}</h5>
+                                        <h5 className="m-0 text-[1.25rem] font-medium leading-[1.2] text-[#212121]">
+                                            ${pkg.price}
+                                        </h5>
                                     </div>
                                 </div>
                             </div>

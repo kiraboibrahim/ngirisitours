@@ -25,25 +25,27 @@ const FeatureSection = () => {
     ];
 
     return (
-        <div className="container-fluid pb-5" id="features">
-            <div className="container pb-5">
-                <div className="row">
+        <div className="w-full pb-5" id="features">
+            <div className="max-w-[1140px] mx-auto px-[15px] pb-5">
+                <div className="flex flex-wrap -mx-[15px]">
                     {features.map((f, idx) => (
-                        <div key={idx} className="col-md-4">
-                            <div className="d-flex mb-4">
+                        <div key={idx} className="md:w-1/3 w-full px-[15px]">
+                            <div className="flex mb-4">
                                 <div
-                                    className="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
-                                    style={{ height: 100, width: 100 }}
+                                    className="flex flex-shrink-0 items-center justify-center bg-[#7AB730] mr-3 h-[100px] w-[100px]"
                                 >
                                     <FontAwesomeIcon
                                         icon={f.icon}
-                                        size="2x"
-                                        className="text-white"
+                                        className="text-white text-[2em]"
                                     />
                                 </div>
-                                <div className="d-flex flex-column">
-                                    <h5>{f.title}</h5>
-                                    <p className="m-0">{f.description}</p>
+                                <div className="flex flex-col">
+                                    <h5 className="mb-2 text-[1.25rem] font-medium leading-[1.2] text-[#212121]">
+                                        {f.title}
+                                    </h5>
+                                    <p className="m-0 text-[#6c757d]">
+                                        {f.description}
+                                    </p>
                                 </div>
                             </div>
                         </div>

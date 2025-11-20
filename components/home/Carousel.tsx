@@ -54,32 +54,31 @@ const Carousel: React.FC = () => {
     };
 
     return (
-        <div className="container-fluid p-0">
+        <div className="w-full p-0">
             <Slider {...settings}>
                 {slides.map((slide) => (
-                    <div key={slide.id} className="position-relative">
+                    <div key={slide.id} className="relative">
                         <Image
                             width="1920"
                             height="600"
-                            className="w-100"
+                            className="w-full"
                             src={slide.img}
                             alt={`Slide ${slide.id}`}
                             style={{ height: '600px', objectFit: 'cover' }}
                         />
                         {/* Gradient overlay for better text readability */}
-                        <div style={{
-                            position: 'absolute',
-                            top: 0,
-                            left: 0,
-                            right: 0,
-                            bottom: 0,
-                            background: 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6))',
-                            zIndex: 1
-                        }} />
-                        <div className="carousel-caption d-flex flex-column align-items-center justify-content-center" style={{ zIndex: 2 }}>
-                            <div className="p-3" style={{ maxWidth: 900 }}>
+                        <div
+                            className="absolute top-0 left-0 right-0 bottom-0 z-[1]"
+                            style={{
+                                background: 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6))'
+                            }}
+                        />
+                        <div
+                            className="absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center z-[2]"
+                        >
+                            <div className="p-3 max-w-[900px]">
                                 <h4
-                                    className="text-white text-uppercase mb-md-3"
+                                    className="text-white uppercase mb-0 md:mb-3 text-lg"
                                     style={{
                                         letterSpacing: '3px',
                                         textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
@@ -88,7 +87,7 @@ const Carousel: React.FC = () => {
                                     Tours & Travel
                                 </h4>
                                 <h1
-                                    className="display-3 text-white mb-md-4"
+                                    className="text-[3.5rem] max-[1200px]:text-[calc(1.475rem_+_2.7vw)] font-light leading-[1.2] text-white mb-0 md:mb-4"
                                     style={{
                                         textShadow: '3px 3px 6px rgba(0,0,0,0.8)',
                                         fontWeight: 'bold'
@@ -98,9 +97,8 @@ const Carousel: React.FC = () => {
                                 </h1>
                                 <Link
                                     href={slide.link || "#special-offer"}
-                                    className="btn btn-primary py-md-3 px-md-5 mt-2"
+                                    className="inline-block font-normal text-center align-middle select-none bg-[#7AB730] border border-[#7AB730] text-white py-[0.375rem] px-[0.75rem] md:py-3 md:px-5 text-base leading-[1.5] mt-2 no-underline hover:bg-[#669928] hover:border-[#5f8f25] hover:text-white transition-[color_0.15s_ease-in-out,background-color_0.15s_ease-in-out,border-color_0.15s_ease-in-out,box-shadow_0.15s_ease-in-out]"
                                     style={{
-                                        transition: 'all 0.3s ease',
                                         boxShadow: '0 4px 15px rgba(0,0,0,0.3)'
                                     }}
                                 >
@@ -154,7 +152,12 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
             e.currentTarget.style.transform = "translateY(-50%) scale(1)";
         }}
     >
-        <span className="carousel-control-next-icon" />
+        <span
+            className="inline-block w-5 h-5 bg-no-repeat bg-center bg-[length:100%_100%]"
+            style={{
+                backgroundImage: "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e\")"
+            }}
+        />
     </div>
 );
 
@@ -172,7 +175,12 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
             e.currentTarget.style.transform = "translateY(-50%) scale(1)";
         }}
     >
-        <span className="carousel-control-prev-icon" />
+        <span
+            className="inline-block w-5 h-5 bg-no-repeat bg-center bg-[length:100%_100%]"
+            style={{
+                backgroundImage: "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e\")"
+            }}
+        />
     </div>
 );
 

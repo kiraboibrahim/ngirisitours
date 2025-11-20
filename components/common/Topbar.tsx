@@ -10,12 +10,13 @@ const Topbar = () => (
                 <div className="lg:w-1/2 w-full px-[15px] text-center lg:text-left mb-2 lg:mb-0">
                     <div className="inline-flex items-center">
                         <p className="m-0">
-                            <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                            triptonicsafaris1999@gmail.com
+                            <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-gray-400" />
+                            <span className="text-sm">triptonicsafaris1999@gmail.com</span>
                         </p>
                         <p className="text-[#656565] px-3 m-0">|</p>
                         <p className="m-0">
-                            <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" /> +256 781 306 607
+                            <FontAwesomeIcon icon={faPhoneAlt} className="mr-2 text-gray-400" />
+                            <span className="text-sm">+256 781 306 607</span>
                         </p>
                     </div>
                 </div>

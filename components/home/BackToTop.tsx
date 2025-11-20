@@ -26,7 +26,7 @@ const BackToTopFAB: React.FC = () => {
     return (
         <button
             onClick={scrollToTop}
-            className="fixed bottom-8 right-8 bg-primary text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition-colors z-50"
+            className="fixed bottom-[45px] right-[45px] bg-[#7AB730] text-white w-[46px] h-[46px] inline-flex items-center justify-center text-center border border-[#7AB730] transition-all duration-150 hover:bg-[#669928] hover:border-[#5f8f25] focus:outline-none focus:shadow-[0_0_0_0.2rem_rgba(142,194,79,0.5)] z-[11]"
             aria-label="Back to top"
         >
             <FontAwesomeIcon icon={faArrowUp} />

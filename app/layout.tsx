@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Montserrat, Open_Sans } from 'next/font/google';
 
 import "./global.css";
-import "./style.css";
+import Navbar from "@/components/common/Navbar";
+import Topbar from "@/components/common/Topbar";
+import Footer from "@/components/common/Footer";
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700'] });
 const openSans = Open_Sans({ subsets: ['latin'], weight: ['400', '600'] });
@@ -20,7 +22,11 @@ export default function RootLayout({
     return (
         <html lang="en" className="scroll-smooth">
             <body className={`${montserrat.className} ${openSans.className} antiliased`}>
+                <Topbar />
+                <Navbar />
                 {children}
+
+                <Footer />
             </body>
         </html>
     );
