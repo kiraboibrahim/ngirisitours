@@ -17,7 +17,7 @@ export const slides: Slide[] = [
     {
         id: 2,
         img: "/img/carousel-2.jpeg",
-        title: "Luxurious Stays & Sunset Dinners",
+        title: "Hotel Reservations",
         description: "Relax in top-notch hotels as you enjoy breathtaking sunsets and delicious local cuisine along Lake Victoria or in Kampala.",
         link: "#special-offer",
     },
@@ -84,7 +84,7 @@ const Carousel: React.FC = () => {
                                         textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
                                     }}
                                 >
-                                    Tours & Travel
+                                    Trip Tonic Safaris - Uganda
                                 </h4>
                                 <h1
                                     className="text-[3.5rem] max-[1200px]:text-[calc(1.475rem_+_2.7vw)] font-light leading-[1.2] text-white mb-0 md:mb-4"

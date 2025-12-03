@@ -58,14 +58,13 @@ const SpecialOffer: React.FC = () => {
                                 Special Offer
                             </h6>
                             <h1 className="text-white mb-2 text-[2.5rem] max-[1200px]:text-[calc(1.375rem_+_1.5vw)] font-medium leading-[1.2]">
-                                <span className="text-[#7AB730]">25% OFF</span> For Safari
-                                Adventures
+                                <span className="text-[#7AB730]">10% discount</span> for a group of four and above
                             </h1>
                         </div>
                         <p className="text-white mt-0 mb-4">
                             Embark on an unforgettable safari in Uganda&lsquo;s most iconic
-                            national parks. Enjoy wildlife, breathtaking landscapes, and
-                            guided tours at a special discounted rate.
+                            National Parks. Enjoy Wildlife, Breathtaking landscapes, and
+                            Guided Tours at a special discounted rate.
                         </p>
                         <ul className="pl-0 list-none text-white m-0">
                             <li className="py-2">

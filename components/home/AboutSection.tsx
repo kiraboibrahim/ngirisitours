@@ -25,7 +25,7 @@ const AboutSection = () => (
                         <p className="mt-0 mb-4 text-[#6c757d]">
                             Trip Tonic Safaris specializes in creating unforgettable safari adventures
                             in Uganda's national parks. From wildlife encounters and scenic landscapes
-                            to luxury lodges and guided tours, we offer personalized experiences
+                            to luxury lodges and guided tours. We offer personalized experiences
                             tailored to your budget and schedule.
                         </p>
                         <div className="flex flex-wrap -mx-[15px] mb-4">

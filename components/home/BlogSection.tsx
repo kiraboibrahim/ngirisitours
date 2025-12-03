@@ -4,11 +4,11 @@ import { BlogPost } from "@/models/BlogPost";
 const blogPosts: BlogPost[] = [
     {
         id: 1,
-        title: "Top Safari Tips for Visiting Queen Elizabeth National Park",
+        title: "Gorilla Tracking",
         author: "Admin",
         category: "Travel Tips",
         date: { day: "12", month: "Nov" },
-        image: "/img/tourist-with-gorilla.jpeg",
+        image: "/img/blog/gorilla-trekking.jpg",
         link: "#",
     },
     {
@@ -22,7 +22,7 @@ const blogPosts: BlogPost[] = [
     },
     {
         id: 3,
-        title: "Discover Jinja: The Source of the Nile and Adventure Sports",
+        title: "Munyaga Waterfalls",
         author: "Admin",
         category: "Culture & Adventure",
         date: { day: "05", month: "Sep" },
@@ -30,6 +30,7 @@ const blogPosts: BlogPost[] = [
         link: "#",
     },
 ];
+
 
 const BlogSection = () => (
     <div className="w-full py-12" id="blog">

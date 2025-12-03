@@ -2,24 +2,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope, faLocationDot, faClock, faBolt, faCheck, faMapLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
+import { SOCIALS, CONTACTS } from "../data";
 const ContactPage = () => {
     const contactInfo = [
         {
             icon: faPhone,
             label: "Phone",
-            value: "+256 700 000000",
+            value: CONTACTS.phoneNumber,
             subtext: "Mon-Sat, 8am-6pm EAT"
         },
         {
             icon: faEnvelope,
             label: "Email",
-            value: "info@triptonicsafaris.com",
+            value: CONTACTS.email,
             subtext: "We reply within 24 hours"
         },
         {
             icon: faLocationDot,
             label: "Address",
-            value: "Kampala, Uganda",
+            value: CONTACTS.location,
             subtext: "East Africa"
         },
         {

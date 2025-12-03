@@ -14,7 +14,7 @@ import {
     faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { submitNewsletter } from "../../services/api";
-
+import { CONTACTS } from "@/app/data";
 const Footer: React.FC = () => {
     const [email, setEmail] = useState("");
     const [loading, setLoading] = useState(false);
@@ -142,15 +142,15 @@ const Footer: React.FC = () => {
                             </h5>
                             <p className="text-white/50 mb-4">
                                 <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
-                                123 Safari Lane, Kampala, Uganda
+                                {CONTACTS.location}
                             </p>
                             <p className="text-white/50 mb-4">
                                 <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" />
-                                +256 781 306 607
+                                {CONTACTS.phoneNumber}
                             </p>
                             <p className="text-white/50 mb-4">
                                 <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                                triptonicsafaris1999@gmail.com
+                                {CONTACTS.email}
                             </p>
 
                             <h6

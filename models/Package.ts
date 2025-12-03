@@ -4,7 +4,6 @@ export interface Package {
     location: string;
     duration: string;
     people: string;
-    price: number;
     rating: number;
     ratingCount: number;
     image: string;

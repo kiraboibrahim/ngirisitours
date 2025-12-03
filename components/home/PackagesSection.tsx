@@ -14,10 +14,9 @@ const packages: Package[] = [
         location: "Queen Elizabeth",
         duration: "3 days",
         people: "2 Persons",
-        price: 450,
         rating: 4.8,
         ratingCount: 120,
-        image: "/img/package-1.jpg",
+        image: "/img/packages/buffalo-queen-elizabeth.jpg",
     },
     {
         id: 2,
@@ -25,54 +24,39 @@ const packages: Package[] = [
         location: "Bwindi",
         duration: "4 days",
         people: "2 Persons",
-        price: 900,
         rating: 5.0,
         ratingCount: 85,
-        image: "/img/package-2.jpg",
+        image: "/img/packages/gorilla-trekking.jpg",
     },
     {
         id: 3,
-        title: "Chimpanzee Tracking in Kibale Forest",
+        title: "Chimpanzee Tracking in Kibale National Park",
         location: "Kibale",
         duration: "3 days",
         people: "2 Persons",
-        price: 600,
         rating: 4.7,
         ratingCount: 60,
-        image: "/img/package-4.jpg",
+        image: "/img/packages/chimpanzee-kibale-park.jpg",
     },
-    /**{
-        id: 4,
-        title: "Relaxing Getaway at Ssese Islands",
-        location: "Ssese Islands",
-        duration: "2 days",
-        people: "2 Persons",
-        price: 350,
-        rating: 4.6,
-        ratingCount: 45,
-        image: "/img/package-4.jpg",
-    }**/
     {
         id: 5,
-        title: "Mountains & Waterfalls Hike in Rwenzori Mountains",
-        location: "Rwenzori",
+        title: "Mountainiring at Rwenzori Mountains",
+        location: "Rwenzori Mountains National Park",
         duration: "5 days",
         people: "2 Persons",
-        price: 750,
         rating: 4.9,
         ratingCount: 70,
-        image: "/img/package-5.jpg",
+        image: "/img/packages/hiking-rwenzori-national-park.jpg",
     },
     {
         id: 6,
-        title: "Cultural Tour of Kampala and Surroundings",
+        title: "Kampala City Tour",
         location: "Kampala",
         duration: "1 day",
         people: "2 Persons",
-        price: 150,
         rating: 4.5,
         ratingCount: 100,
-        image: "/img/package-6.jpg",
+        image: "/img/packages/kampala-city-tour.jpg",
     },
 ];
 
@@ -121,9 +105,6 @@ const PackagesSection = () => {
                                             <FontAwesomeIcon icon={faStar} className="text-[#7AB730] mr-2" />
                                             {pkg.rating} <small className="text-[80%] font-normal">({pkg.ratingCount})</small>
                                         </h6>
-                                        <h5 className="m-0 text-[1.25rem] font-medium leading-[1.2] text-[#212121]">
-                                            ${pkg.price}
-                                        </h5>
                                     </div>
                                 </div>
                             </div>

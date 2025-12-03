@@ -10,17 +10,17 @@ const FeatureSection = () => {
         {
             icon: faMoneyCheckAlt,
             title: "Competitive Pricing",
-            description: "Affordable safari packages designed to offer great value without compromising on comfort or experience."
+            description: "We offer safari packages, hotel reservations and air ticketing at best rates with great value for money and time spent with us"
         },
         {
             icon: faAward,
-            title: "Best Services",
-            description: "Professional guides, top-notch accommodations, and personalized itineraries for every traveler."
+            title: "Packages",
+            description: "We offer a variety of tour packages that comes with life memorable experiences."
         },
         {
             icon: faGlobe,
-            title: "Worldwide Coverage",
-            description: "We offer safari experiences in Uganda and connections to select destinations across Africa."
+            title: "Motor Vehicle Hire",
+            description: "We offer a variety of tourist customized vehicles at good rates."
         },
     ];
 

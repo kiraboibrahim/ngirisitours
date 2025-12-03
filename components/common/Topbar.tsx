@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faTwitter, faLinkedinIn, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
+import { SOCIALS, CONTACTS } from "@/app/data";
 
 const Topbar = () => (
     <div className="w-full bg-white pt-3 hidden lg:block">
@@ -11,12 +12,12 @@ const Topbar = () => (
                     <div className="inline-flex items-center">
                         <p className="m-0">
                             <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-[#7AB730] hover:text-[#527a20]" />
-                            <span className="font-semibold text-[#212121] text-sm">triptonicsafaris1999@gmail.com</span>
+                            <span className="font-semibold text-[#212121] text-sm">{CONTACTS.email}</span>
                         </p>
                         <p className="text-[#656565] px-3 m-0">|</p>
                         <p className="m-0">
                             <FontAwesomeIcon icon={faPhoneAlt} className="mr-2 text-[#7AB730] hover:text-[#527a20]" />
-                            <span className="font-semibold text-[#212121] text-sm">+256 781 306 607</span>
+                            <span className="font-semibold text-[#212121] text-sm">{CONTACTS.phoneNumber}</span>
                         </p>
                     </div>
                 </div>

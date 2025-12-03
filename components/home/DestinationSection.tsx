@@ -4,15 +4,15 @@ import { Destination } from "@/models/Destination";
 const destinations: Destination[] = [
     {
         id: 1,
-        name: "Murchison Falls National Park",
-        location: "Northern Uganda",
+        name: "Munyaga Waterfalls",
+        location: "Bwindi Impenetrable National Park",
         attractionsCount: 50,
         image: "/img/waterfall.jpeg",
     },
     {
         id: 2,
-        name: "Bwindi Impenetrable Forest",
-        location: "Southwestern Uganda",
+        name: "Bwindi Impenetrable National Park",
+        location: "South western Uganda",
         attractionsCount: 30,
         image: "/img/tourist-with-gorilla.jpeg",
     },
@@ -25,24 +25,24 @@ const destinations: Destination[] = [
     },
     {
         id: 4,
-        name: "Ssese Islands",
-        location: "Lake Victoria",
+        name: "Bwindi Impenetrable National Park",
+        location: "South Western Uganda",
         attractionsCount: 15,
         image: "/img/tourist-swimming.jpeg",
     },
     {
         id: 5,
-        name: "Rwenzori Mountains",
-        location: "Western Uganda",
+        name: "Ishasha",
+        location: "Queen Elizabeth National Park",
         attractionsCount: 20,
         image: "/img/tourist-trek.jpeg",
     },
     {
         id: 6,
-        name: "Jinja – Source of the Nile",
+        name: "Murchison Waterfalls",
         location: "Eastern Uganda",
         attractionsCount: 10,
-        image: "/img/tourists-under-waterfall.jpeg",
+        image: "/img/boat-cruise-murchison-falls.jpg",
     },
 ];
 
