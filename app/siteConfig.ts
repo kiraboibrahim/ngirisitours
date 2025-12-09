@@ -1,13 +1,13 @@
 const siteConfig = {
     company: {
-        name: "C&C Tours",
+        name: "Ngirisi Tours",
         tagline: "Your gateway to wonderful adventures",
         logo: "/img/logo.png",
     },
     contacts: {
-        phoneNumber: "+256 772 336 099",
-        email: "candctours2024@gmail.com",
-        location: "Kasangati Town Council",
+        phoneNumber: "+256 779 511 810",
+        email: "ngirisitoursuganda@gmail.com",
+        location: "Ngirisi Hill, Mpuungu Sub Country",
         businessHours: "Mon-Fri: 8AM-6PM, Sat: 9AM-4PM"
     },
     socials: {
@@ -17,9 +17,9 @@ const siteConfig = {
         linkedin: "https://linkedin.com/company/triptonicsafaris"
     },
     seo: {
-        title: "CandC Tours — Uganda Safaris & Adventure Travel",
-        description: "CandC Tours offers expert-led Uganda safaris, including gorilla trekking, wildlife safaris, and cultural tours. Custom itineraries, experienced guides, and hassle-free booking for an unforgettable East African adventure.",
-        keywords: "Uganda tours, safari Uganda, gorilla trekking, wildlife safari, cultural tours, CandC Tours, Triptonic Safaris, Uganda travel",
+        title: "Ngirisi Tours Uganda — Uganda Safaris & Adventure Travel",
+        description: "Ngirisi Tours offers expert-led Uganda safaris, including gorilla trekking, wildlife safaris, and cultural tours. Custom itineraries, experienced guides, and hassle-free booking for an unforgettable East African adventure.",
+        keywords: "Uganda tours, safari Uganda, gorilla trekking, wildlife safari, cultural tours, Ngirisi Tours, Uganda travel",
         siteUrl: "https://candctours.com",
         image: "/img/seo/og-image.jpg"
     }

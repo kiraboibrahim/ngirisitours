@@ -10,7 +10,7 @@ import { TeamMember } from '@/models/TeamMember';
 
 const teamMembers: TeamMember[] = [
     {
-        name: "Ms. Atuhaire Caroline",
+        name: "Ms. Jane Doe",
         socials: {
             facebook: "",
             linkedin: "",
