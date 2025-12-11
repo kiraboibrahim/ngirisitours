@@ -8,7 +8,7 @@ const Topbar = () => (
     <div className="w-full bg-white pt-3 hidden lg:block">
         <div className="max-w-[1140px] mx-auto px-[15px]">
             <div className="flex flex-wrap -mx-[15px]">
-                <div className="lg:w-1/2 w-full px-[15px] text-center lg:text-left mb-2 lg:mb-0">
+                <div className="lg:w-2/3 w-full px-[15px] text-center lg:text-left mb-2 lg:mb-0">
                     <div className="inline-flex items-center">
                         <p className="m-0">
                             <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-[#7AB730] hover:text-[#527a20]" />
@@ -21,7 +21,7 @@ const Topbar = () => (
                         </p>
                     </div>
                 </div>
-                <div className="lg:w-1/2 w-full px-[15px] text-center lg:text-right">
+                <div className="lg:w-1/3 w-full px-[15px] text-center lg:text-right">
                     <div className="inline-flex items-center">
                         {(
                             Object.entries({
