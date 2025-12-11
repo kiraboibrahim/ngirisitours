@@ -10,8 +10,8 @@ import siteConfig from "@/app/siteConfig";
 export const slides: Slide[] = [
     {
         id: 1,
-        img: "/img/carousel-1.jpeg",
-        title: "Encounter Majestic Giraffes in the Wild",
+        img: "/img/gallery/lodges.jpg",
+        title: "Ngiris Lodge",
         description: "Get up close with Uganda's graceful giants at Murchison Falls National Park. A safari experience you will never forget!",
         link: "#special-offer",
     },
@@ -24,15 +24,15 @@ export const slides: Slide[] = [
     },
     {
         id: 3,
-        img: "/img/carousel-3.jpeg",
-        title: "Witness Elephants at Sunset",
+        img: "/img/gallery/lodge-compound.jpg",
+        title: "Ngirisi Hill",
         description: "Experience the thrill of watching majestic elephants roam the savannah during golden hour at Queen Elizabeth National Park.",
         link: "#special-offer",
     },
     {
         id: 5,
-        img: "/img/carousel-5.jpeg",
-        title: "Breathtaking African Sunsets",
+        img: "/img/gallery/lodge-bedroom.jpeg",
+        title: "Ngirisi Hill Silverback Gorilla Lodge",
         description: "Marvel at iconic acacia trees silhouetted against dramatic Ugandan sunsets. Perfect moments for photography and reflection.",
         link: "#special-offer",
     },

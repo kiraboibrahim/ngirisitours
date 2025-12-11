@@ -5,9 +5,9 @@ const siteConfig = {
         logo: "/img/logo.png",
     },
     contacts: {
-        phoneNumber: "+256 779 511 810",
+        phoneNumber: "+256 779 511 810 | +256 783 938 958",
         email: "ngirisitoursuganda@gmail.com",
-        location: "Ngirisi Hill, Mpuungu Sub Country",
+        location: "Bugolobi, Nakawa Division - Kampala",
         businessHours: "Mon-Fri: 8AM-6PM, Sat: 9AM-4PM"
     },
     socials: {

@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import type { Service } from './types';
+import siteConfig from "../siteConfig";
 
 interface ServicePageProps {
     service: Service;
@@ -35,7 +36,7 @@ const ServicePage = ({ service }: ServicePageProps) => {
                         {service.badge}
                     </div>
                     <p className="text-[#7AB730] font-semibold tracking-widest uppercase mb-2">
-                        TripTonic Safaris
+                        {siteConfig.company.name}
                     </p>
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">{service.title}</h1>
                     <p className="text-gray-300 max-w-2xl text-lg">{service.subtitle}</p>

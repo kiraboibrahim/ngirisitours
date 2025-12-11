@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUsers, faEnvelope, faComments, faHeart, faCamera, faGlobe, faQuoteLeft, faPaperPlane, faUserFriends, faMapMarkedAlt } from "@fortawesome/free-solid-svg-icons";
+import { faUsers, faComments, faHeart, faCamera, faGlobe, faQuoteLeft, faPaperPlane, faUserFriends, faMapMarkedAlt } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn, faYoutube, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import siteConfig from "../siteConfig";
@@ -25,7 +25,7 @@ const CommunityPage = () => {
         {
             name: "Sarah Mitchell",
             location: "United States",
-            text: "The gorilla trekking experience was absolutely life-changing. TripTonic made everything seamless from start to finish!",
+            text: `The gorilla trekking experience was absolutely life-changing. ${siteConfig.company.name} made everything seamless from start to finish!`,
             safari: "3-Day Gorilla Safari"
         },
         {

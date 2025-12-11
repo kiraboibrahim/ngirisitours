@@ -17,6 +17,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import type { Service } from './types';
+import siteConfig from "../siteConfig";
 
 const services: Record<string, Service> = {
     carRentals: {
@@ -192,7 +193,7 @@ const services: Record<string, Service> = {
             {
                 name: "Maria & Carlos Santos",
                 location: "Barcelona, Spain",
-                text: "TripTonic created the honeymoon of our dreams. The attention to romantic details was incredible!",
+                text: `${siteConfig.company.name} created the honeymoon of our dreams. The attention to romantic details was incredible!`,
             },
         ],
     },
@@ -208,7 +209,7 @@ const services: Record<string, Service> = {
         ],
         overviewTitle: "Professional Flight Booking Services",
         overviewText:
-            "Let TripTonic Safaris handle all your flight arrangements. We work with major airlines to secure the best routes and competitive prices for your East African journey. From international connections to regional flights, we ensure smooth travel planning with flexible options and expert guidance.",
+            `Let ${siteConfig.company.name} handle all your flight arrangements. We work with major airlines to secure the best routes and competitive prices for your East African journey. From international connections to regional flights, we ensure smooth travel planning with flexible options and expert guidance.`,
         benefits: [
             "Access to exclusive airline rates",
             "Multi-city and complex itinerary planning",
